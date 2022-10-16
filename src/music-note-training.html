@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>随机音符生成器</title>
+    <link rel="stylesheet" type="text/css" href="css/note-table.css" />
+</head>
+
+<body>
+    <h1>随机音符生成器</h1>
+    <div>
+        <div>
+            <label for="row-num">行数：</label>
+            <input id="row-num" type="number" value="8" />
+            <label for="col-num">列数：</label>
+            <input id="col-num" type="number" value="8" />
+        </div>
+        <button onclick="buildStandardNoteTable()">基本音符</button>
+    </div>
+    <div id="main">
+
+    </div>
+</body>
+<script type="text/javascript" src="js/music-note.js"></script>
+<script type="text/javascript" src="js/music-note-training.js"></script>
+
+</html>
