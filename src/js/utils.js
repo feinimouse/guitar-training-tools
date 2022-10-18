@@ -1,8 +1,4 @@
 const UTILS = {
-    randomBoolean() {
-        return Math.random() > 0.5;
-    },
-
     randomInt(min, max) {
         if (typeof max === 'undefined') {
             max = min;
@@ -11,17 +7,17 @@ const UTILS = {
         return Math.floor(Math.random() * (max - min)) + min;
     },
 
+    getRandomItem(list) {
+        return list[UTILS.randomInt(list.length)]
+    },
+
     replaceMain(element) {
         const main = document.getElementById('main');
         main.innerHTML = '';
         main.appendChild(element);
     },
 
-    getValue(id) {
-        return document.getElementById(id).value;
+    getIntValue(id) {
+        return parseInt(document.getElementById(id).value);
     }
 };
-
-Array.prototype.randomItem = function () {
-    return this[UTILS.randomInt(this.length)]
-}

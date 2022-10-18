@@ -12,3 +12,7 @@ const MUSIC_NOTES = [
     {downFlag: 'B♭', upFlag: 'A♯', downVoice: '7♭', upVoice: '6♯', downLevel: 'VII♭', uplevel: 'VI♯', standard: false},
     {downFlag: 'B', upFlag: 'B', downVoice: '7', upVoice: '7', downLevel: 'VII', uplevel: 'VII', standard: true},
 ];
+
+const VOLUME_LIST = MUSIC_NOTES.map(note => ({...note, low: true}))
+    .concat(MUSIC_NOTES.map(note => ({...note})))
+    .concat(MUSIC_NOTES.map(note=> ({...note, high: true})));
