@@ -45,6 +45,14 @@ function onAllLevel() {
     RANDOM_MUSIC_NOTE_GENERATOR.refreshMusicTable(targetList);
 }
 
+function onAllSing() {
+    const noteInfoList = RANDOM_MUSIC_NOTE_GENERATOR.getUserSelectedNoteList();
+    const targetList = noteInfoList
+        .map(note => ({...note, flag: note.upSing}))
+        .concat(noteInfoList.map(note => ({...note, flag: note.downSing})));
+    RANDOM_MUSIC_NOTE_GENERATOR.refreshMusicTable(targetList);
+}
+
 function onIsSpecialString() {
     if (document.getElementById('is-special-string').checked) {
         document.getElementById('from-string').disabled = false;
