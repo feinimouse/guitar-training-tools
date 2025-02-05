@@ -1,37 +1,18 @@
 # guitar-training-tools
 
-#### 介绍
+## 介绍
 基于html页面的吉他训练小工具
 
-#### 软件架构
-软件架构说明
+## 使用说明
 
+运行 `index.html` 根据提示可跳转到相应的工具页面
 
-#### 安装教程
+### 随机音符生成器
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+根据页面选择生成随机的音符列表
 
-#### 使用说明
+其中**基本**级数、唱名、音符，表示不带升降号的音，**全部**级数、唱名、音符则包含升降号
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+若勾选**指定琴弦**，则可以在显示的音符前增加xx弦提示
 
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+若勾选**指定音高**，则会在音符上方或下方增加 `·` 符号，表示高音或者低音
